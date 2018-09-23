@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B631A71D-C905-4A72-A922-1991F39E856C}</ProjectGuid>
+    <ProjectGuid>{5E3A8ED1-FCBD-416E-BF54-9B108EF974B4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GroupProject</RootNamespace>
     <AssemblyName>GroupProject</AssemblyName>
@@ -45,39 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="acadamy_dbDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>acadamy_dbDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="AddCourse.cs">
+    <Compile Include="SearchStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddCourse.Designer.cs">
-      <DependentUpon>AddCourse.cs</DependentUpon>
+    <Compile Include="SearchStudent.Designer.cs">
+      <DependentUpon>SearchStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddStudent.cs">
+    <Compile Include="Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddStudent.Designer.cs">
-      <DependentUpon>AddStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StartPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StartPage.Designer.cs">
-      <DependentUpon>StartPage.cs</DependentUpon>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddCourse.resx">
-      <DependentUpon>AddCourse.cs</DependentUpon>
+    <EmbeddedResource Include="SearchStudent.resx">
+      <DependentUpon>SearchStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddStudent.resx">
-      <DependentUpon>AddStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartPage.resx">
-      <DependentUpon>StartPage.cs</DependentUpon>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,18 +73,8 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="acadamy_dbDataSet.xsc">
-      <DependentUpon>acadamy_dbDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="acadamy_dbDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>acadamy_dbDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="acadamy_dbDataSet.xss">
-      <DependentUpon>acadamy_dbDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -111,6 +87,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon-png-22.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
